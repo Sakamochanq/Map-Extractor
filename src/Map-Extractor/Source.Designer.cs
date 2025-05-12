@@ -57,6 +57,7 @@
             this.LoadShapeButton.TabIndex = 0;
             this.LoadShapeButton.Text = "読み込み（F）";
             this.LoadShapeButton.UseVisualStyleBackColor = true;
+            this.LoadShapeButton.Click += new System.EventHandler(this.LoadShapeButton_Click);
             // 
             // toolStrip1
             // 

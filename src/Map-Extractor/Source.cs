@@ -1,20 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using SharpMap;
+using SharpMap.Layers;
+using SharpMap.Data.Providers;
+using System.Drawing;
+using Map_Extractor.lib;
 
 namespace Map_Extractor
 {
     public partial class Source : Form
     {
+        private Shape shape; // Declare the Shape instance here  
+
         public Source()
         {
             InitializeComponent();
+            shape = new Shape(CanvasBox); // Initialize the Shape instance in the constructor  
+        }
+
+        private void LoadShapeButton_Click(object sender, EventArgs e)
+        {
+            using (var ofd = new OpenFileDialog() { Filter = "地図データ(*.shp) | *.shp; | すべてのファイル(*.) | *.*;" })
+            {
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    this.PathLabel.Text = ofd.FileName;
+                    shape.Load(ofd.FileName);
+                }
+            }
         }
     }
 }
