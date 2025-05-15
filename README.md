@@ -1,6 +1,6 @@
 <div align="center">
     <a href="#">
-        <img src="./assets/XXX.png" width="500px" alt="Logo">
+        <img src="./assets/Map-Extractor-Logo.png" width="500px" alt="Logo">
     </a>
     <hr>
 </div>
@@ -19,7 +19,7 @@
 
 <div align="center">
     <a href="#">
-        <img src="./assets/XXX.png" width="400px" alt="Demo">
+        <img src="./assets/Map-Extractor-Demo.gif" width="400px" alt="Demo">
     </a>
 </div>
 
