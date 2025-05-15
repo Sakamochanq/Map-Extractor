@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using SharpMap;
 using SharpMap.Layers;
@@ -10,12 +10,12 @@ namespace Map_Extractor
 {
     public partial class Source : Form
     {
-        private Shape shape; // Declare the Shape instance here  
+        private Shape shape;
 
         public Source()
         {
             InitializeComponent();
-            shape = new Shape(CanvasBox); // Initialize the Shape instance in the constructor  
+            shape = new Shape(CanvasBox);
         }
 
         private void LoadShapeButton_Click(object sender, EventArgs e)
